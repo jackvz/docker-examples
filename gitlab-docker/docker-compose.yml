@@ -1,0 +1,33 @@
+version: "3.7"
+
+services:
+  gitlab:
+    image: gitlab/gitlab-ce
+    ports:
+      - "80:80"
+      - "8022:22"
+      - "443:443"
+      - "5005:5005"
+    volumes:
+      - ${GITLAB_HOME}/data:/var/opt/gitlab
+      - ${GITLAB_HOME}/logs:/var/log/gitlab
+      - ${GITLAB_HOME}/config:/etc/gitlab
+    networks:
+      - gitlab
+
+  gitlab-runner:
+    image: gitlab/gitlab-runner:alpine
+    restart: unless-stopped
+    depends_on:
+      - gitlab
+    volumes:
+      - ./runner-config:/etc/gitlab-runner
+    deploy:
+      mode: replicated
+      replicas: 3
+    networks:
+      - gitlab
+
+networks:
+  gitlab:
+    name: gitlab-network

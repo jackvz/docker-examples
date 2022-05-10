@@ -1,0 +1,12 @@
+version: "3.7"
+
+services:
+  docs:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      target: "${BUILD_ENV}"
+    ports:
+      - 8000:${BUILD_PORT}
+    volumes:
+      - ./:/app

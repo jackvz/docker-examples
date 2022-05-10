@@ -1,0 +1,6 @@
+[[runners]]
+[runners.docker]
+[[runners.docker.services]]
+name = "mysql:latest"
+[[runners.docker.services]]
+name = "redis:latest"

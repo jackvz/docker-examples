@@ -1,0 +1,26 @@
+site_name: MkDocs Docker
+site_description: MkDocs Docker
+site_author: Name
+# site_url: https://www.site.com/
+# repo_url: https://github.com/name/repo
+copyright: 'Copyright &copy; Year Name'
+
+# Configuration
+theme:
+  name: material
+  language: en
+  palette:
+    primary: blue
+    accent: blue
+  font:
+    text: Roboto
+    code: Roboto Mono
+
+extra_css:
+  - css/dark-mode.css
+
+# Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: true
