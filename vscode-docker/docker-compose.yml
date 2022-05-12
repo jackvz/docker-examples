@@ -4,7 +4,7 @@ services:
   node-nmap-app:
     image: node-nmap-demo
     entrypoint: /bin/bash
-    command: "sudo tail -f /dev/null"
+    command: "tail -f /dev/null"
     volumes:
       - ./:/app
 

@@ -21,16 +21,16 @@ Build the Node.js Docker project image, and test it by running a container (with
 
 ```sh
 docker build -t node-nmap-demo . --progress plain
-docker run --rm --name node-nmap-demo-1 node-nmap-demo bash -c "pnpm start '127.0.0.1 google.com'"
+docker run --rm --name node-nmap-demo-1 --entrypoint "/bin/bash" node-nmap-demo -c "pnpm start '127.0.0.1 google.com'"
 ```
 
 Build the Python Docker project images, and test it as containers:
 
 ```sh
 docker build -t photon-app ./projects/Photon/ --progress plain
-docker run --rm --name photon-app-1 photon-app bash -c "-u https://wired.com"
+docker run --rm --name photon-app-1 --entrypoint "/bin/bash" photon-app -c "python photon.py -u https://wired.com"
 docker build -t striker-app ./projects/Striker/ --progress plain
-docker run --rm --name striker-app-1 striker-app bash -c "https://wired.com"
+docker run --rm --name striker-app-1 --entrypoint "/bin/bash" striker-app -c "python striker.py https://wired.com"
 ```
 
 Start the application stack, with the `-d` flag to run everything in the background:
