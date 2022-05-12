@@ -1,4 +1,4 @@
-# HashiCorp [Terraform](https://www.terraform.io/) Example
+# [HashiCorp](https://www.hashicorp.com/) [Terraform](https://www.terraform.io/) Example
 
 @todo: https://github.com/jsiebens/hashi-up
 
