@@ -1,0 +1,14 @@
+{
+  "name": "101-app",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "node-nmap": "^4.0.0"
+  },
+  "devDependencies": {
+  }
+}

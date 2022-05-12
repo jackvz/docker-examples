@@ -1,3 +1,5 @@
+# syntax=docker/dockerfile:1
+
 FROM python:alpine AS base
 WORKDIR /app
 COPY requirements.txt .

@@ -1,0 +1,19 @@
+version: "3.7"
+
+services:
+  node-nmap-app:
+    image: node-nmap-demo
+    entrypoint: /bin/bash
+    command: "sudo tail -f /dev/null"
+    volumes:
+      - ./:/app
+
+  python3-photon-app:
+    image: photon-app
+    entrypoint: /bin/sh
+    command: "tail -f /dev/null"
+
+  python2-striker-app:
+    image: striker-app
+    entrypoint: /bin/sh
+    command: "tail -f /dev/null"

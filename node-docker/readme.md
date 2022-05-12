@@ -16,7 +16,7 @@ docker-compose logs -f
 
 Wait for the database and web server to start up, and then browse to the site: [http://localhost:3000/](http://localhost:3000/)
 
-Remove the system's containers and network(s), and add the `--volumes` flag to remove the volumes as well:
+Clear the application stack by removing all containers and network(s), and add the `--volumes` flag to remove the volumes as well:
 
 ```sh
 docker-compose down

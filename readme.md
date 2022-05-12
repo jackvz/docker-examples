@@ -20,3 +20,5 @@
 - [GitLab Example](./gitlab-docker/readme.md)
 - [VSCode Example](./vscode-docker/readme.md)
 - [Sentry Example](./sentry-docker/readme.md)
+- [NestJS Example](./nest-docker/readme.md)
+- [HashiCorp Examples](./hashicorp-docker/readme.md)
