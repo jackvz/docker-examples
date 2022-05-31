@@ -6,7 +6,7 @@
 
 Here is an example of working with Python and Node.js in Docker containers with Visual Studio Code (or [Code OSS](https://github.com/microsoft/vscode)), available for Windows, macOS, Linux and FreeBSD.
 
-[Get and install Visual Studio Code](https://code.visualstudio.com/download), and the [VSCode Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python), the [VSCode Docker extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker), the [VSCode Remote Development extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack), the [VSCode Command Variable extension](https://marketplace.visualstudio.com/items?itemName=rioj7.command-variable) and the [VSCode EditorConfig extension](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig).
+[Get and install Visual Studio Code](https://code.visualstudio.com/download) or [VSCodium](https://vscodium.com/#install), and the [VSCode Python extension](https://marketplace.visualstudio.com/items?itemName=ms-python.python), the [VSCode Docker extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker), the [VSCode Remote Development extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.vscode-remote-extensionpack), the [VSCode Command Variable extension](https://marketplace.visualstudio.com/items?itemName=rioj7.command-variable) and the [VSCode EditorConfig extension](https://marketplace.visualstudio.com/items?itemName=EditorConfig.EditorConfig).
 
 ### Build and Test the Python and Node.js Project Docker Images
 
